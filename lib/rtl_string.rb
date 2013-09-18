@@ -40,7 +40,7 @@ class RtlString
   def delete_range(range)
     code_points = string.localize.code_points
     range.each do |i|
-      code_points.delete_at(range.start)
+      code_points.delete_at(range.first)
     end
     @string = code_points.pack("U*")
     nil
@@ -50,6 +50,13 @@ class RtlString
     code_points = string.localize.code_points
     selected = code_points[index_or_range]
     self.class.new((selected.is_a?(Array) ? selected : [selected]).pack("U*"))
+  end
+
+  def insert(str, index)
+    code_points = string.localize.code_points
+    code_points.insert(index, *str.localize.code_points)
+    @string = code_points.pack("U*")
+    self
   end
 
   def size
