@@ -77,3 +77,9 @@ class RtlString
     @@name_cache ||= {}
   end
 end
+
+class String
+  def to_rtl_s
+    RtlString.new(self)
+  end
+end
