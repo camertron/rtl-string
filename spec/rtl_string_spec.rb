@@ -2,6 +2,14 @@
 
 require "spec_helper"
 
+describe String do
+  describe "#to_rtl_s" do
+    it "should return an instance of RtlString" do
+      "abc".to_rtl_s.should be_a(RtlString)
+    end
+  end
+end
+
 describe RtlString do
   let(:str) do
     [
