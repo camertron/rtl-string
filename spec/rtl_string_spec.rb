@@ -35,7 +35,7 @@ describe RtlString do
 
   describe "#inspect" do
     it "uses to_s to represent the string" do
-      @rtl_str.inspect.should == "#<RtlString:0x#{@rtl_str.object_id.to_s(16)} \"#{representation}\">"
+      @rtl_str.inspect.should == "\"#{representation}\""
     end
   end
 

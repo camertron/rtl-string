@@ -27,7 +27,7 @@ class RtlString
   end
 
   def inspect
-    "#<#{self.class.name}:0x#{object_id.to_s(16)} \"#{to_s}\">"
+    to_s.inspect
   end
 
   def delete_at(index)
