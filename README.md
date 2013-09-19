@@ -36,7 +36,7 @@ str.length        # => 12
 
 ### Requirements
 
-Depends on the twitter-cldr-rb gem.
+Depends on the  [twitter-cldr-rb](https://github.com/twitter/twitter-cldr-rb) gem.
 
 ### Running Tests
 
