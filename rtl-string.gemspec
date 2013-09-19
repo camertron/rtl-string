@@ -16,5 +16,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'twitter_cldr'
 
   s.require_path = 'lib'
-  s.files = Dir["{lib,spec}/**/*", "Gemfile", "History.txt", "LICENSE", "Rakefile", "rtl-string.gemspec"]
+  s.files = Dir["{lib,spec}/**/*", "Gemfile", "History.txt", "LICENSE", "Rakefile", "README.md", "rtl-string.gemspec"]
 end
